@@ -9,7 +9,8 @@ def check_type(my_name = None, my_id = None):
         if not isinstance(my_name, str):
             raise TypeError('_str must be a string')
         if my_id:
-            if not (isinstance(my_id, int)):
+            if not (isinstance(my_id, int) or (isinstance(my_id, str) and my_id.isdigit())):
+            #if not (isinstance(my_id, int)):
                 return False
         return True
 
