@@ -1,5 +1,6 @@
 from flask import Flask
 
+#check type for vars
 def check_type(my_name = None, my_id = None):
     # names should exist
     if not my_name:
