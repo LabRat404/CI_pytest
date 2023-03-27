@@ -1,6 +1,6 @@
 from flask import Flask
 
-def check_type(my_name, my_id):
+def check_type(my_name = None, my_id = None):
     # names should exist
     if not my_name:
         return False
