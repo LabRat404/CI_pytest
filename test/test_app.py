@@ -17,3 +17,10 @@ def test_check_type():
 
     myId2 = "123456789"
     assert check_type(myname, myId2) == True
+
+    myId3 = "123456789a"
+    assert check_type(myname, myId3) == False
+
+    myId4 = "a_john"
+    assert check_type(myname, myId4) == False
+
