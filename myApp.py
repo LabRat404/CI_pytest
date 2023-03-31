@@ -46,9 +46,6 @@ def check_sid_len(my_id = None):
         #check if string !10 chracter
         if (len(str(my_id))!=10):
             return False
-        #check if contain space 
-        if (not  str(my_id).isdigit()):
-            return False
         if not (isinstance(my_id, int) or (isinstance(my_id, str) and my_id.isdigit())):
         #if not (isinstance(my_id, int)):
             return False
